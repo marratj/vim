@@ -3,10 +3,15 @@ set tabstop=4
 set expandtab
 set ai " Auto indent
 set si " Smart indent
-colorscheme codedark
 set t_Co=256
 set t_ut=
 colorscheme codedark
+
+syntax on
+set number
+
+set  rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
+set laststatus=2
 
 " Enable folding
 set foldmethod=indent
