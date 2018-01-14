@@ -26,3 +26,7 @@ au BufNewFile,BufRead *.py
     \ set expandtab |
     \ set autoindent |
     \ set fileformat=unix |
+
+" enable pathogen
+execute pathogen#infect()
+let g:terraform_align=1

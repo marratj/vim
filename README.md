@@ -2,15 +2,17 @@
 
 This is just my personal config for my Windows Subsystem for Linux config. It contains instructions for a working and good-looking powerline in shell and my vimrc.
 
-`git clone https://github.com/powerline/fonts.git`
-  
-`fonts/install.ps1`
+```
+git clone https://github.com/powerline/fonts.git
 
-`sudo apt install build-essential python-pip`
+fonts/install.ps1
 
-`sudo pip install powerline-status` # original powerline for use with vim (doesn't look right for bash in WSL, though)
+sudo apt install build-essential python-pip
 
-`sudo pip install powerline-shell` # powerline-shell for use with WSL bash
+pip install powerline-status # original powerline for use with vim (doesn't look right for bash in WSL, though)
+
+pip install powerline-shell # powerline-shell for use with WSL bash
+```
 
 Add to .bashrc:
 
@@ -27,3 +29,23 @@ fi
 `git clone https://github.com/marratj/vimrc.git ~/.vim/`
 
 
+## Install pathogen.vim
+
+```
+mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+```
+
+## Install vim-terraform
+
+```
+cd ~/.vim/bundle
+git clone https://github.com/hashivim/vim-terraform.git
+```
+
+## Install vim-markdown
+
+```
+cd ~/.vim/bundle
+git clone https://github.com/plasticboy/vim-markdown.git
+```
