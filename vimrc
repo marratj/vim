@@ -29,4 +29,15 @@ au BufNewFile,BufRead *.py
 
 " enable pathogen
 execute pathogen#infect()
+
+" vim-terraform
 let g:terraform_align=1
+
+" set folding for Terraform
+au BufNewFile,BufRead *.tf
+    \ set tabstop=2 |
+    \ set softtabstop=2 |
+    \ set shiftwidth=2 |
+    \ set expandtab |
+    \ set autoindent |
+    \ set fileformat=unix |
