@@ -49,3 +49,10 @@ git clone https://github.com/hashivim/vim-terraform.git
 cd ~/.vim/bundle
 git clone https://github.com/plasticboy/vim-markdown.git
 ```
+
+## Install NERDtree
+
+```
+git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
+
+```

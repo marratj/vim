@@ -13,6 +13,8 @@ set number
 set  rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
 set laststatus=2
 
+autocmd vimenter * NERDTree
+
 " Enable folding
 set foldmethod=indent
 set foldlevel=99
