@@ -26,6 +26,30 @@ if [ "$TERM" != "linux"  ]; then
 fi
 ```
 
+# Bash on macOS
+
+Install Python with Homebrew
+
+`brew install python`
+
+Install Powerline-Status
+
+`pip2 install powerline-status`
+
+Add to .bash_profile:
+
+```
+# Start Powerline
+
+powerline-daemon -q
+POWERLINE_BASH_CONTINUATION=1
+POWERLINE_BASH_SELECT=1
+. /usr/local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
+
+```
+
+
+
 `git clone https://github.com/marratj/vimrc.git ~/.vim/`
 
 

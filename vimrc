@@ -10,7 +10,7 @@ colorscheme codedark
 syntax on
 set number
 
-set  rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
+set  rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim/
 set laststatus=2
 
 autocmd vimenter * NERDTree
