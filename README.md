@@ -34,12 +34,15 @@ Install Python with Homebrew
 
 Install Powerline-Status
 
-`pip2 install powerline-status`
+`pip3 install powerline-status`
 
 Add to .bash_profile:
 
 ```
 # Start Powerline
+# UTF-8 seems required in Python3.7 for Powerline
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 powerline-daemon -q
 POWERLINE_BASH_CONTINUATION=1
